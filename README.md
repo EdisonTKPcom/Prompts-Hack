@@ -16,7 +16,7 @@ Feel free to do Pull Requests
 
 ## What's Better in Prompts-Hack
 
-✅ **More Content**: 12 folders (vs 6 original) | 140+ files (vs ~105 original)  
+✅ **More Content**: 13 folders (vs 6 original) | 140+ files (vs ~105 original)  
 ✅ **Better Documentation**: 12 detailed guides + comprehensive main guide  
 ✅ **Legal Protection**: Copyright disclaimers on every file  
 ✅ **Latest Updates**: 2026 models and features included  
@@ -26,7 +26,7 @@ Feel free to do Pull Requests
 ## Statistics
 
 - **Total markdown files**: 140+
-- **Main directories**: 12
+- **Main directories**: 13
 
 ## Directory Structure
 
@@ -98,6 +98,10 @@ Feel free to do Pull Requests
 ### Cursor
 - Cursor IDE rules, agent context, MCP
 - Deeper dive: rules system, Composer/agent, tools, skills
+
+### Lovable
+- Lovable system prompt (React + TypeScript + Supabase AI app builder)
+- Deeper dive: platform architecture, AI agent behavior, Supabase integration, tech stack
 
 ## Star History
 
