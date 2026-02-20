@@ -31,14 +31,15 @@ Prompts-Hack/
 ├── Anthropic/          # Claude models (Opus, Sonnet, Haiku, Code)
 ├── Apple/              # Apple Creator Studio, Creator Studio Pro
 ├── China/              # Chinese LLMs (Qwen, Baidu, Tencent, etc.)
+├── Cursor/             # Cursor IDE (rules, agent, deeper dive)
 ├── GitHub/             # GitHub Copilot, Spark
 ├── Google/             # Gemini, Antigravity, NotebookLM
+├── Lovable/            # Lovable AI app builder (React + Supabase)
 ├── Manus/              # Manus AI
 ├── Misc/               # Various AI assistants
 ├── OpenAI/             # GPT models, O-series, tools
 ├── OpenClaw/           # OpenClaw coding assistant
 ├── Perplexity/         # Perplexity AI assistants
-├── Cursor/             # Cursor IDE (rules, agent, deeper dive)
 └── xAI/                # Grok models
 ```
 
@@ -58,6 +59,7 @@ Detailed guides for each folder are available:
 - **[OpenClaw Guide](./guides/OpenClaw.md)** - OpenClaw coding assistant
 - **[Perplexity Guide](./guides/Perplexity.md)** - Voice and Browser assistants
 - **[Cursor Guide](./guides/Cursor.md)** - Cursor IDE rules, agent, MCP, deeper dive
+- **[Lovable Guide](./guides/Lovable.md)** - AI app builder: React + TypeScript + Supabase, deeper dive
 - **[Manus Guide](./guides/Manus.md)** - Manus AI system prompt
 
 ## How to Use System Prompts
