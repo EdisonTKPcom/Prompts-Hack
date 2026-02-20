@@ -1,0 +1,34 @@
+# Daily update workflow for Prompts-Hack
+# Runs on schedule and can be triggered manually.
+# Reports repo stats to the Actions summary; optionally use Agentic Workflow for AI-driven updates.
+
+name: Daily Update
+
+on:
+  schedule:
+    - cron: '5 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: read
+  issues: read
+
+jobs:
+  stats:
+    name: Repo stats
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Count files and directories
+        id: counts
+        run: |
+          echo "md_count=$(find . -type f -name '*.md' -not -path './.git/*' | wc -l | tr -d ' ')" >> $GITHUB_OUTPUT
+          echo "dir_count=$(find . -maxdepth 1 -type d ! -name '.' ! -name '.git' | wc -l | tr -d ' ')" >> $GITHUB_OUTPUT
+
+      - name: Write summary
+        run: |
+          echo "## Prompts-Hack daily stats" >> $GITHUB_STEP_SUMMARY
+          echo "- Markdown files: **${{ steps.counts.outputs.md_count }}**" >> $GITHUB_STEP_SUMMARY
+          echo "- Top-level directories: **${{ steps.counts.outputs.dir_count }}**" >> $GITHUB_STEP_SUMMARY
